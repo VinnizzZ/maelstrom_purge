@@ -170,7 +170,7 @@ function init() {
     scene.add(camera);
 
     // Luz do Muzzle Flash (Inicia apagada - intensidade 0)
-    muzzleFlashLight = new THREE.PointLight(0xffaa00, 0, 40);
+    muzzleFlashLight = new THREE.PointLight(0xffaa00, 0, 40, 1.5);
     // Posição aproximada do cano da arma (frente, direita e um pouco pra baixo)
     muzzleFlashLight.position.set(0.3, -0.2, -1.5);
     camera.add(muzzleFlashLight);
