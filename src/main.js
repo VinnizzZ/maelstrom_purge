@@ -203,7 +203,7 @@ function loadWeapons() {
     const gltfLoader = new GLTFLoader();
     Object.entries(weaponsConfig).forEach(([idStr, cfg]) => {
         const id = parseInt(idStr);
-        gltfLoader.load(`/${cfg.modelFile}`, (gltf) => {
+        gltfLoader.load(`./${cfg.modelFile}`, (gltf) => {
             const model = gltf.scene;
             model.position.set(cfg.defaultPos.x, cfg.defaultPos.y, cfg.defaultPos.z);
             model.scale.set(cfg.scale, cfg.scale, cfg.scale);
@@ -267,8 +267,8 @@ function loadEnemyAssets() {
     const textureLoader = new THREE.TextureLoader();
     const fbxLoader = new FBXLoader();
 
-    enemySkins.A = textureLoader.load('/Textures/zombieA.png');
-    enemySkins.C = textureLoader.load('/Textures/zombieC.png');
+    enemySkins.A = textureLoader.load('./Textures/zombieA.png');
+    enemySkins.C = textureLoader.load('./Textures/zombieC.png');
 
     [enemySkins.A, enemySkins.C].forEach(tex => {
         tex.flipY = true; // Corrigido para modelos FBX
