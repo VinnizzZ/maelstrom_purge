@@ -275,7 +275,7 @@ function loadEnemyAssets() {
         tex.colorSpace = THREE.SRGBColorSpace;
     });
 
-    fbxLoader.load('/characterMedium.fbx', (fbx) => {
+    fbxLoader.load('./characterMedium.fbx', (fbx) => {
         enemyBaseModel = fbx;
         if (scene && enemies.length === 0) spawnEnemies();
     });
