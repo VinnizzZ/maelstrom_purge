@@ -1,0 +1,15 @@
+- [ ] Add imports (FBXLoader, SkeletonUtils)
+- [ ] Add enemy system variables + weapon damage
+- [ ] Add loadEnemyAssets function
+- [ ] Add spawnEnemies function  
+- [ ] Add updateEnemyHUD function
+- [ ] Add damageEnemy function
+- [ ] Add animateEnemyBones function
+- [ ] Add updateEnemies function
+- [ ] Wire: loadEnemyAssets call in init()
+- [ ] Wire: spawnEnemies call in loadLevel()
+- [ ] Wire: raycast hit detection in executeShot()
+- [ ] Wire: updateEnemies call in animate loop
+- [x] Update HUD (index.html) - enemy-info div
+- [x] Update CSS (style.css) - enemy-info + crosshair.hit
+- [ ] Build and test

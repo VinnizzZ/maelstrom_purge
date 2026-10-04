@@ -45,6 +45,7 @@ body {
     height: 20px; 
     border: 2px solid #00ffff; 
     border-radius: 50%; 
+    transition: transform 0.05s ease-out;
 }
 
 #crosshair::after { 
@@ -65,6 +66,8 @@ body {
     color: #00ffff; 
     font-size: 24px; 
     text-shadow: 0 0 10px #00ffff; 
+    text-align: right;
+    line-height: 1.3;
 }
 
 #level-info { 
@@ -74,4 +77,20 @@ body {
     color: #ff003c; 
     font-size: 20px; 
     text-shadow: 0 0 10px #ff003c; 
+}
+
+#enemy-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffaa00;
+    font-size: 20px;
+    text-shadow: 0 0 10px #ffaa00;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#crosshair.hit {
+    border-color: #ff003c;
+    box-shadow: 0 0 10px #ff003c;
 }
