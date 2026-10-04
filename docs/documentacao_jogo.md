@@ -76,3 +76,28 @@ Os shaders foram construídos do zero durante as iterações de código, dispens
 *   **Estética Totentanz (Cenário):** O cenário utiliza um *Fragment Shader* customizado com interpolação linear (`mix`) guiada por ondas senoidais (`sin`) associadas ao tempo, gerando efeitos de *scanline* e pulso neon contínuo nas caixas.
 *   **Hit Flash via GPU:** Para aplicar feedback visual de dano sem comprometer a CPU com trocas de material, utilizamos o método `onBeforeCompile` para injetar variáveis diretas no material base do Three.js, mesclando a textura com a cor vermelha e mantendo o sombreamento original.
 *   **Física de Partículas (Sangue):** O sistema espirra o sangue processando a gravidade vetorial e a dissipação de opacidade (alfa) estritamente dentro do *Vertex Shader*, permitindo calcular dezenas de partículas dinâmicas simultaneamente durante um disparo de shotgun.
+
+## Instruções para a execução do projeto
+Certifique-se de ter o Git e o Node.js instalados na nova máquina.
+
+* **Abra o terminal e clone o repositório do GitHub:**
+Bash
+
+git clone https://github.com/VinnizzZ/maelstrom_purge.git
+
+* **Acesse a pasta do projeto recém-clonada:**
+Bash
+
+cd cyberpunk-fps
+
+* **Instale todas as dependências do projeto (Vite, Three.js) mapeadas no arquivo package.json:**
+Bash
+
+npm install
+
+* **Inicie o servidor local de desenvolvimento:**
+Bash
+
+npm run dev
+
+O terminal exibirá um link de acesso local (geralmente http://localhost:5173/). Clique no link ou copie-o para o navegador para abrir o jogo.
